@@ -8,4 +8,4 @@ git branch -d develop 删除develop分支
 git checkout develop 检出develop分支到到当前工作目录，或者说切换到develop分支
 git checkout -b develop 创建并切换到develop分支
 git branch  查看当前的分支
-git merge develop 合并develop分支到当前分支
+git merge [--no-ff] develop 合并develop分支到当前分支，加上那个参数不会采用快速的默认合并
