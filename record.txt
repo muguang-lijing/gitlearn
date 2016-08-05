@@ -9,3 +9,4 @@ git checkout develop 检出develop分支到到当前工作目录，或者说切�
 git checkout -b develop 创建并切换到develop分支
 git branch  查看当前的分支
 git merge [--no-ff] develop 合并develop分支到当前分支，加上那个参数不会采用快速的默认合并
+注意：各个分支的缓冲区其实是共享的，每个分支commit后的版本则是独立的；也就是说，如果在dev1分支用 git add 命令往缓冲区添加一个文件，那么切换到dev2分支的时候，在缓冲区就可以看到这个文件。
